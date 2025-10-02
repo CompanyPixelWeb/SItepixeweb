@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+   <link rel="icon" type="image/png" sizes="256x256" href="/pixelweb-Photoroom.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixelWeb</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <html class="scroll-smooth"></html>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+
+  document.addEventListener('keydown', (e) => {
+
+    if (e.key === 'F12' || e.keyCode === 123) { e.preventDefault(); }
+ 
+    if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) { e.preventDefault(); }
+
+    if (e.ctrlKey && (e.key === 'U')) { e.preventDefault(); }
+  });
+
+  document.addEventListener('contextmenu', (e) => e.preventDefault());
+</script>
+  </body>
+</html>

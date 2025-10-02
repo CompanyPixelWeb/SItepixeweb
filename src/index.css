@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-ink: #0c0e12;        
+  --color-cyan: #46e3ff;      
+  --color-indigo: #6d4dff;     
+  --color-mint: #31d6c7;       
+  --color-text: #e6e9f0;       
+}
+
+
+@custom-variant dark (&:where(.dark, .dark *));
+html, body, #root { height: 100%; }
+body { background: var(--color-ink); color: var(--color-text); }
+
+html {
+
+  scrollbar-color: var(--color-indigo) rgba(255,255,255,0.06);
+  scrollbar-width: thin;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+}
+*::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.06);
+}
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--color-cyan), var(--color-indigo));
+  border-radius: 8px;
+  border: 2px solid rgba(0,0,0,0.35); 
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--color-cyan), color-mix(in oklab, var(--color-indigo) 85%, white));
+}
+
+:root { interpolate-size: allow-keywords; } 
+
+details::details-content {
+  transition: height .35s ease, content-visibility .35s ease allow-discrete;
+  height: 0;
+  overflow: clip;
+}
+details[open]::details-content { height: auto; }
