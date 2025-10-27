@@ -56,7 +56,7 @@ export default function App() {
       <header className="sticky top-0 z-50 border-b border-white/10 bg-black/50 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3">
-            <img src="/pixelweb-Photoroom.png" alt="Pixel Web" className="w-30  -m-5" />
+            <img src="/pixelweb-Photoroom.png" alt="Pixel Web" className="w-50  -m-8" />
          
           </div>
           <nav className="hidden sm:flex items-center gap-6 text-sm">
@@ -99,8 +99,8 @@ export default function App() {
 
           <div className="relative">
             <div className="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-cyan/25 to-indigo/25 blur-2xl" />
-            <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-[#131720] p-8">
-              <img src="/pixelweb-Photoroom.png" alt="Pixel Web" className="mx-auto h-44 w-auto" />
+            <div className="relative overflow-hidden rounded-3xl  p-8">
+              <img src="image-Photoroom (2).png" alt="Pixel Web" className="mx-auto h-55 w-auto" />
             </div>
           </div>
         </div>
