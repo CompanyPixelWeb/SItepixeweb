@@ -61,11 +61,21 @@ export default function App() {
           </div>
           <nav className="hidden sm:flex items-center gap-6 text-sm">
             <a href="#servicos" className="text-slate-300 hover:text-white">Serviços</a>
-            <a href="#processo" className="text-slate-300 hover:text-white">Como trabalho</a>
+            <a href="#processo" className="text-slate-300 hover:text-white">Como trabalhamos</a>
             <a href="#trabalhos" className="text-slate-300 hover:text-white">Projetos</a>
             <a href="#faq" className="text-slate-300 hover:text-white">FAQ</a>
           </nav>
-          <PrimaryButton href="#contato">Falar agora</PrimaryButton>
+         <a 
+            href="https://api.whatsapp.com/send/?phone=18996181081&text=Ol%C3%A1%21+Quero+solicitar+uma+proposta+para+um+site+profissional.&type=phone_number&app_absent=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="  bg-green- inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold text-black
+      bg-gradient-to-r from-cyan to-indigo shadow-[0_0_0_6px_rgba(109,77,255,.15)]
+      hover:shadow-[0_0_0_10px_rgba(70,227,255,.18)] transition hover:-translate-y-0.5"
+          >
+            Falar agora
+          </a>
+
         </div>
       </header>
 
@@ -97,16 +107,23 @@ export default function App() {
             </div>
           </div>
 
-          <div className="relative">
-            <div className="absolute -inset-1 rounded-3xl bg-gradient-to-tr from-cyan/25 to-indigo/25 blur-2xl" />
-            <div className="relative overflow-hidden rounded-3xl  p-8">
-              <img src="image-Photoroom (2).png" alt="Pixel Web" className="mx-auto h-55 w-auto" />
-            </div>
+        <div className="relative flex justify-center items-center">
+ 
+          <div className="absolute -inset-2 bg-gradient-to-tr from-cyan-400/30 via-blue-500/20 to-indigo-500/30 blur-3xl animate-pulse" />
+          <div className="bg-transparent p-6 backdrop-blur-none transition-all duration-500">
+            <img
+              src="image-Photoroom (5).png"
+              alt="Pixel Web"
+              className="h-[420px] w-auto ml-28 -my-25 scale-105 hover:scale-110 transition-transform duration-700"
+            />
           </div>
+        </div>
+
+
         </div>
       </section>
 
-      {/* SERVIÇOS */}
+
       <section id="servicos" ref={servicesRef} className="border-t border-white/10 reveal">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-semibold md:text-3xl">
@@ -284,23 +301,18 @@ export default function App() {
               ["Entrega inclui SEO?", "Sim: metadados, sitemap, performance e estrutura semântica."],
               ["Dão suporte pós-entrega?", "7–30 dias conforme plano; também ofereço manutenção mensal."],
             ].map(([q, a]) => (
-              <details key={q} className="group rounded-xl border border-white/10 bg-black/30 p-4">
-                <summary className="cursor-pointer list-none font-medium text-white">
-                  {q}
-                  <span className="float-right text-cyan group-open:hidden">+</span>
-                  <span className="float-right hidden text-indigo group-open:inline">–</span>
-                </summary>
-                <p className="mt-2 text-sm text-slate-300">{a}</p>
-              </details>
+              <div key={q} className="rounded-xl border border-white/10 bg-black/30 p-4">
+                <h3 className="font-medium text-white mb-2">{q}</h3>
+                <p className="text-sm text-slate-300">{a}</p>
+              </div>
             ))}
           </div>
         </div>
 
+
         <div id="contato" className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
           <a
-            href={`https://wa.me/18981185292?text=${encodeURIComponent(
-              "Olá! Quero solicitar uma proposta para um site profissional."
-            )}`}
+            href={`https://api.whatsapp.com/send/?phone=18996181081&text=Ol%C3%A1%21+Quero+solicitar+uma+proposta+para+um+site+profissional.&type=phone_number&app_absent=0`}
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Solicitar proposta pelo WhatsApp"
@@ -325,7 +337,13 @@ export default function App() {
             <img src="/pixelweb-Photoroom.png" alt="Pixel Web" className="h-6 w-auto" />
             <span>© {new Date().getFullYear()} Pixel Web</span>
           </div>
-          <a href="#contato" className="text-cyan hover:text-white">Falar agora</a>
+          <a href="https://api.whatsapp.com/send/?phone=18996181081&text=Ol%C3%A1%21+Quero+solicitar+uma+proposta+para+um+site+profissional.&type=phone_number&app_absent=0"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-cyan hover:text-white">
+            
+            Falar agora
+          </a>
         </div>
       </footer>
     </div>
