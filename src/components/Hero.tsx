@@ -44,7 +44,7 @@ export function Hero({ heroRef }: { heroRef: React.RefObject<HTMLElement | null>
         <div className="w-full hidden md:flex justify-center items-center mb-8 md:mb-0 lg:pl-20">
           <div className="w-full flex items-center justify-center bg-transparent p-2 sm:p-4 md:p-6 backdrop-blur-none">
             <img
-              src="\src\assets\hero_web_illustration.svg" 
+              src="\public\hero_web_illustration.svg" 
               alt="Desenvolvimento web profissional"
               className="h-[300px] lg:h-[400px] xl:h-[450px]"
             />
