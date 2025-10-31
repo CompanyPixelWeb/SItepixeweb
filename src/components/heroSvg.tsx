@@ -1,0 +1,127 @@
+export function HeroIllustration() {
+  return (
+    <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" className="h-[300px] lg:h-[400px] xl:h-[550px] w-auto transition-transform duration-700 hover:scale-105">
+      <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" className="stop-color:#46e3ff;stop-opacity:0.8" />
+      <stop offset="100%" className="stop-color:#6d4dff;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" className="stop-color:#6d4dff;stop-opacity:0.6" />
+      <stop offset="100%" className="stop-color:#46e3ff;stop-opacity:0.6" />
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" className="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" className="stop-color:#0f172a;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <circle cx="650" cy="150" r="120" fill="url(#grad1)" opacity="0.1">
+    <animate attributeName="r" values="120;140;120" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="150" cy="650" r="100" fill="url(#grad2)" opacity="0.1">
+    <animate attributeName="r" values="100;120;100" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <g transform="translate(150, 150)">
+    <rect x="0" y="0" width="500" height="380" rx="12" fill="#1e293b" stroke="url(#grad1)" stroke-width="2"/>
+    
+    <rect x="0" y="0" width="500" height="40" rx="12" fill="#334155"/>
+    <rect x="0" y="28" width="500" height="12" fill="#334155"/>
+    
+    <circle cx="20" cy="20" r="6" fill="#ef4444"/>
+    <circle cx="40" cy="20" r="6" fill="#f59e0b"/>
+    <circle cx="60" cy="20" r="6" fill="#10b981"/>
+    
+    <rect x="90" y="12" width="340" height="16" rx="8" fill="#1e293b" opacity="0.6"/>
+    <text x="100" y="23" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">www.seu-site-profissional.com</text>
+    
+    <rect x="15" y="55" width="470" height="310" rx="6" fill="url(#screenGrad)"/>
+    
+    <g opacity="0.4">
+      <rect x="30" y="75" width="180" height="8" rx="4" fill="#46e3ff">
+        <animate attributeName="width" values="180;200;180" dur="3s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="30" y="95" width="240" height="8" rx="4" fill="#6d4dff">
+        <animate attributeName="width" values="240;260;240" dur="3.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="30" y="115" width="200" height="8" rx="4" fill="#46e3ff">
+        <animate attributeName="width" values="200;220;200" dur="4s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="30" y="135" width="160" height="8" rx="4" fill="#6d4dff">
+        <animate attributeName="width" values="160;180;160" dur="3.2s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    
+    <g transform="translate(30, 160)">
+      <rect x="0" y="0" width="440" height="30" rx="4" fill="#334155" opacity="0.6"/>
+      <rect x="10" y="10" width="60" height="10" rx="2" fill="#46e3ff" opacity="0.8"/>
+      <rect x="360" y="8" width="70" height="14" rx="7" fill="url(#grad1)" opacity="0.9">
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+      </rect>
+      
+      <rect x="0" y="45" width="200" height="80" rx="6" fill="#334155" opacity="0.4"/>
+      <rect x="215" y="45" width="225" height="80" rx="6" fill="#334155" opacity="0.4"/>
+      
+      <g transform="translate(10, 140)">
+        <rect x="0" y="0" width="130" height="50" rx="6" fill="#6d4dff" opacity="0.2" stroke="#6d4dff" stroke-width="1"/>
+        <text x="15" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#46e3ff">+150%</text>
+        <text x="15" y="40" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Conversão</text>
+        
+        <rect x="145" y="0" width="130" height="50" rx="6" fill="#46e3ff" opacity="0.2" stroke="#46e3ff" stroke-width="1"/>
+        <text x="160" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#6d4dff">100</text>
+        <text x="160" y="40" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">SEO Score</text>
+        
+        <rect x="290" y="0" width="130" height="50" rx="6" fill="#10b981" opacity="0.2" stroke="#10b981" stroke-width="1"/>
+        <text x="305" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#10b981">95+</text>
+        <text x="305" y="40" font-family="Arial, sans-serif" font-size="10" fill="#94a3b8">Performance</text>
+      </g>
+    </g>
+  </g>
+  
+  <g filter="url(#glow)">
+    <circle cx="120" cy="300" r="30" fill="none" stroke="#46e3ff" stroke-width="2" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" from="0 120 300" to="360 120 300" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="120" cy="300" r="8" fill="#46e3ff" opacity="0.9"/>
+    
+    <rect x="680" y="280" width="50" height="50" rx="6" fill="#6d4dff" opacity="0.8">
+      <animate attributeName="y" values="280;260;280" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <text x="693" y="312" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#fff">TS</text>
+    
+    <path d="M 680 500 L 720 520 L 680 540" fill="none" stroke="#10b981" stroke-width="3" stroke-linecap="round" opacity="0.8">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+    </path>
+    <circle cx="750" cy="520" r="15" fill="#10b981" opacity="0.8">
+      <animate attributeName="r" values="15;18;15" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="743" y="527" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#fff">$</text>
+  </g>
+  
+  <g opacity="0.6">
+    <circle cx="200" cy="100" r="3" fill="#46e3ff">
+      <animate attributeName="cy" values="100;80;100" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="600" r="3" fill="#6d4dff">
+      <animate attributeName="cy" values="600;620;600" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="500" r="2" fill="#46e3ff">
+      <animate attributeName="cx" values="100;120;100" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
+    </svg>
+  )
+}
