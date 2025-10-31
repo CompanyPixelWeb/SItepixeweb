@@ -45,3 +45,36 @@ details::details-content {
   overflow: clip;
 }
 details[open]::details-content { height: auto; }
+
+
+@keyframes flow-line {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.animate-flow-line {
+  animation: flow-line 2s linear infinite;
+}
+
+
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-slow-reverse {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 6s linear infinite;
+}
+
+.animate-spin-slow-reverse {
+  animation: spin-slow-reverse 8s linear infinite;
+}

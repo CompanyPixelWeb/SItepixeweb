@@ -33,7 +33,7 @@ export function FAQ({ faqRef }: { faqRef: React.RefObject<HTMLElement | null> })
               <p className="mt-1 text-xs text-slate-300 sm:text-sm">Enviar mensagem com objetivo e prazo desejado.</p>
             </div>
             <span className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-cyan to-indigo px-5 py-3 text-sm font-semibold text-black shadow-[0_0_0_4px_rgba(109,77,255,.15)] transition-all hover:shadow-[0_0_0_6px_rgba(70,227,255,.18)] sm:text-base sm:px-6 sm:py-3.5">
-              Solicitar proposta
+              Solicitar Orçamento
             </span>
           </div>
         </a>

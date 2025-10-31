@@ -2,7 +2,7 @@ import { whatsappLink } from "../data/websiteData"
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 border-b border-black/10 bg-black/5 backdrop-blur">
+    <header className="sticky top-0 z-50 bg-gradient-to-r from-purple-950/10 to-blue-950/10 backdrop-blur">
         <div className="mx-auto flex h-14 sm:h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
             <div className="flex items-center">
               <img src="/pixelweb-Photoroom.png" alt="Pixel Web" className="h-27 lg:h-45" />

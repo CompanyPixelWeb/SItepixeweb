@@ -21,17 +21,18 @@ export const services = [
 export const process = [
   {
     n: "1. Descoberta",
-    d: "Briefing rápido, objetivos, referências e prazos. Definição do escopo e do funil de conversão.",
+    d: "Coleta de informações, definição de objetivos, análise de referências e prazos. Estruturamos o escopo e o funil de conversão.",
   },
   {
     n: "2. Protótipo",
-    d: "Wireframe e paleta em cima da identidade. Revisão rápida e validação do fluxo.",
+    d: "Criação do wireframe e definição da paleta visual baseada na identidade da marca. Revisão e validação do fluxo de navegação.",
   },
   {
     n: "3. Desenvolvimento",
-    d: "React + TypeScript + Tailwind com deploy contínuo. Integração de formulários, APIs e analytics.",
+    d: "Desenvolvimento completo do projeto com foco em performance, SEO técnico e métricas de conversão. Integração de formulários, APIs e monitoramento por analytics.",
   },
 ]
+
 
 export const works = [
   {
@@ -57,10 +58,10 @@ export const works = [
 ]
 
 export const faqData = [
-  ["Qual o prazo médio?", "Landing pages: 5–10 dias; e-commerce: 2–4 semanas, conforme escopo."],
-  ["Como funciona o pagamento?", "50% na aprovação do protótipo e 50% na entrega, com nota."],
+  ["Qual o prazo médio?", "Landing pages e Power BI de 5–10 dias; e-commerce e aplicativos de 2–4 semanas; Automações de 3 - 6 semanas, tudo conforme escopo do projeto."],
+  ["Como funciona o pagamento?", "Atualmente aceitamos pagamentos por pix, e em caso de parcelamento, aceitamos cartões de crédito(pagamento via Mercado Pago)."],
   ["Entrega inclui SEO?", "Sim: metadados, sitemap, performance e estrutura semântica."],
-  ["Dão suporte pós-entrega?", "7–30 dias conforme plano; também ofereço manutenção mensal."],
+  ["Dão suporte pós-entrega?", "7–30 dias conforme plano; também ofereçemos manutenções mensais."],
 ]
 
 export const whatsappLink = "https://api.whatsapp.com/send/?phone=18996181081&text=Ol%C3%A1%21+Quero+solicitar+uma+proposta+para+um+site+profissional.&type=phone_number&app_absent=0"
