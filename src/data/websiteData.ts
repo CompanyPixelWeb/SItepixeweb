@@ -64,5 +64,5 @@ export const faqData = [
   ["Dão suporte pós-entrega?", "7–30 dias conforme plano; também ofereçemos manutenções mensais."],
 ]
 
-export const whatsappLink = "https://api.whatsapp.com/send/?phone=18996181081&text=Ol%C3%A1%21+Quero+solicitar+uma+proposta+para+um+site+profissional.&type=phone_number&app_absent=0"
+export const whatsappLink = "https://api.whatsapp.com/send/?phone=18996708793&text=Ol%C3%A1%21+Quero+solicitar+uma+proposta+para+um+site+profissional.&type=phone_number&app_absent=0"
 
